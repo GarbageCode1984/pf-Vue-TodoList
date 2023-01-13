@@ -12,7 +12,7 @@
 
         <modal v-if="showModal" @close="showModal = false">
             <h3 slot="header">경고</h3>
-            <span slot="footer" @click="showModal = false">
+            <span class="footerSpan" slot="footer" @click="showModal = false">
                 할 일을 입력하세요.
                 <i class="closeModalBtn fas fa-times" aria-hidden="true"></i>
             </span>
@@ -77,5 +77,11 @@ input:focus {
 i {
     color: white;
     vertical-align: middle;
+}
+.footerSpan {
+    background: none;
+    width: 100%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.527);
 }
 </style>
