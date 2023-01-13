@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import Modal from "./common/Modal.vue";
+import AlertModal from "./common/AlertModal.vue";
 
 export default {
     data() {
@@ -45,6 +45,9 @@ export default {
             //인풋박스 입력후 초기화
             this.newTodoItem = "";
         },
+    },
+    components: {
+        AlertModal,
     },
 };
 </script>
