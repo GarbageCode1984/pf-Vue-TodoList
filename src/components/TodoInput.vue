@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import AlertModal from "./common/AlertModal.vue";
+import Modal from "./common/AlertModal.vue";
 
 export default {
     data() {
@@ -47,7 +47,7 @@ export default {
         },
     },
     components: {
-        AlertModal,
+        Modal: Modal,
     },
 };
 </script>
