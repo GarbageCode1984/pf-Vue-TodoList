@@ -32,7 +32,6 @@ export default {
     },
     methods: {
         addTodo() {
-            //공백도 입력되는 상황을 막아주기 위해
             if (this.newTodoItem !== "") {
                 let value = this.newTodoItem && this.newTodoItem.trim();
                 this.$emit("addTodo", value);
@@ -42,7 +41,6 @@ export default {
             }
         },
         clearInput() {
-            //인풋박스 입력후 초기화
             this.newTodoItem = "";
         },
     },
